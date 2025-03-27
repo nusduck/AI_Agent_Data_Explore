@@ -11,18 +11,18 @@ from tools.web_search import create_web_search_tool
 logger = setup_logger("agent_planner.log")
 model_manager = LanguageModelManager()
 
+class AnalysisPlan(BaseModel):
+    """Plan for data analysis and visualization"""
+    steps: List[str] = Field(
+        description="different steps to follow for data analysis and visualization, in sequential order"
+    )
+
 def planner_agent(state: GraphState) -> Any:
+    logger.info(f"Start planner agent")
     # model manager
     llm = model_manager.get_model(ModelType.OPENAI_O3)
     # Define data analysis tools
     tools = [create_web_search_tool()]
-    # Define planning models
-    class AnalysisPlan(BaseModel):
-        """Plan for data analysis and visualization"""
-        steps: List[str] = Field(
-            description="different steps to follow for data analysis and visualization, in sequential order"
-        )
-
     # Create planning prompts
     prompt = """For the given objective, develop a detailed step-by-step plan for data analysis and visualization.
     first, here is some information about the data:
@@ -58,7 +58,7 @@ def planner_agent(state: GraphState) -> Any:
             data_path=state.get("raw_data_path", "No path provided"),
             data_info=state.get("raw_data_info", "No info provided")
         )
-        logger.info("Successfully formatted prompt with state data")
+        logger.info(f"Created planner agent successfully")
         return create_react_agent(model=llm, tools=tools, prompt=formatted_prompt, response_format=AnalysisPlan)
     except Exception as e:
         logger.error(f"Error creating planner agent: {str(e)}")

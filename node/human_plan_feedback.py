@@ -1,22 +1,25 @@
 from core.state import GraphState
-from node.plan_node import plan_node
+from typing_extensions import TypedDict, Literal
 from langgraph.types import interrupt, Command
 from langgraph.graph import END
 from typing import Any
 
-def human_plan_feedback_node(state: GraphState) -> Any:
-    humanReview = interrupt(
+def human_plan_feedback_node(state: GraphState) -> Command[Literal["plan","replan",END]]:
+    # this is the value we'll be providing via Command(resume=<human_review>)
+    human_review = interrupt(
         {
             "analysis_plan": state["analysis_plan"]
         }
     )
 
-    action, review = humanReview 
+    # Get action and review data from the human_review dictionary
+    action = human_review.get("action")
+    review = human_review.get("review")
 
     if action == "go":
-        return Command(goto= END)
+        return Command(goto=END)
     elif action == "edit":
-        return {"human_feedback_response": review}
+        return Command(goto="replan", update={"human_feedback_response": review, "pending_human_input": True})
     else:
-        return Command(goto= plan_node)
+        return Command(goto="plan")
     

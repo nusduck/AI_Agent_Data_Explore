@@ -54,3 +54,102 @@
 2025-03-28 00:28:11,516 - utils.logger - INFO - Successfully formatted prompt with state data
 2025-03-28 00:29:51,216 - utils.logger - INFO - Language models initialized successfully.
 2025-03-28 00:29:51,362 - utils.logger - INFO - Successfully formatted prompt with state data
+2025-03-28 00:39:38,992 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 00:39:39,062 - utils.logger - INFO - Successfully formatted prompt with state data
+2025-03-28 00:52:54,373 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 00:52:54,447 - utils.logger - INFO - Successfully formatted prompt with state data
+2025-03-28 01:03:24,814 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:03:24,873 - utils.logger - INFO - Successfully formatted prompt with state data
+2025-03-28 01:03:44,211 - utils.logger - INFO - Successfully formatted prompt with state data
+2025-03-28 01:08:38,026 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:08:38,101 - utils.logger - INFO - start planner agent
+2025-03-28 01:08:38,101 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 01:08:55,328 - utils.logger - INFO - start planner agent
+2025-03-28 01:08:55,329 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 01:34:03,395 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:34:03,449 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:36:16,147 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:36:16,199 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:37:54,895 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:37:54,968 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:37:55,053 - utils.logger - INFO - Start planner agent
+2025-03-28 01:37:55,053 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 01:43:32,086 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:43:32,132 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:43:32,189 - utils.logger - INFO - Start planner agent
+2025-03-28 01:43:32,190 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 01:45:24,351 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:45:24,399 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:45:24,514 - utils.logger - INFO - Start planner agent
+2025-03-28 01:45:24,515 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 01:55:30,714 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:55:38,866 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:55:38,969 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:58:46,235 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:58:46,283 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:59:16,006 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:59:16,053 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:59:53,267 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 01:59:53,337 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:00:23,292 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:00:23,337 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:00:23,400 - utils.logger - INFO - Start planner agent
+2025-03-28 02:00:23,400 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 02:00:33,731 - utils.logger - INFO - Start planner agent
+2025-03-28 02:00:33,731 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 02:02:07,370 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:02:07,419 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:02:07,493 - utils.logger - INFO - Start planner agent
+2025-03-28 02:02:07,494 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 02:02:23,414 - utils.logger - INFO - Start planner agent
+2025-03-28 02:02:23,415 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 02:03:06,728 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:03:06,782 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:03:06,865 - utils.logger - INFO - Start planner agent
+2025-03-28 02:03:06,866 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 02:03:32,280 - utils.logger - INFO - Start planner agent
+2025-03-28 02:03:32,281 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 02:09:35,125 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:09:35,174 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:09:35,266 - utils.logger - INFO - Start planner agent
+2025-03-28 02:09:35,266 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 02:09:44,996 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:09:45,043 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:09:45,132 - utils.logger - INFO - Start planner agent
+2025-03-28 02:09:45,132 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 02:10:03,994 - utils.logger - INFO - Start replanner agent
+2025-03-28 02:10:03,995 - utils.logger - INFO - Created replanner agent successfully
+2025-03-28 02:10:03,995 - utils.logger - ERROR - Error creating replanner agent: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'str'>
+2025-03-28 02:13:47,771 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:14:02,734 - utils.logger - INFO - Start replanner agent
+2025-03-28 02:14:02,735 - utils.logger - INFO - Created replanner agent successfully
+2025-03-28 02:14:02,742 - utils.logger - ERROR - Error creating replanner agent: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'str'>
+2025-03-28 02:20:10,212 - utils.logger - INFO - Start replanner agent
+2025-03-28 02:20:10,215 - utils.logger - INFO - Created replanner agent successfully
+2025-03-28 02:20:10,228 - utils.logger - ERROR - Error creating replanner agent: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'str'>
+2025-03-28 02:20:35,237 - utils.logger - INFO - Start replanner agent
+2025-03-28 02:20:35,239 - utils.logger - INFO - Created replanner agent successfully
+2025-03-28 02:20:35,243 - utils.logger - ERROR - Error creating replanner agent: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'str'>
+2025-03-28 02:20:49,945 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:20:50,007 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:21:03,991 - utils.logger - INFO - Start replanner agent
+2025-03-28 02:21:03,992 - utils.logger - INFO - Created replanner agent successfully
+2025-03-28 02:21:04,000 - utils.logger - ERROR - Error creating replanner agent: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'str'>
+2025-03-28 02:24:46,813 - utils.logger - INFO - Start replanner agent
+2025-03-28 02:24:46,814 - utils.logger - INFO - Created replanner agent successfully
+2025-03-28 02:24:46,819 - utils.logger - ERROR - Error creating replanner agent: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'str'>
+2025-03-28 02:24:53,965 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:24:54,015 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:24:54,025 - utils.logger - INFO - Start replanner agent
+2025-03-28 02:24:54,026 - utils.logger - INFO - Created replanner agent successfully
+2025-03-28 02:24:54,026 - utils.logger - ERROR - Error creating replanner agent: create_react_agent() got an unexpected keyword argument 'llm'
+2025-03-28 02:25:48,604 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:25:48,658 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:25:48,677 - utils.logger - INFO - Start replanner agent
+2025-03-28 02:25:48,677 - utils.logger - INFO - Created replanner agent successfully
+2025-03-28 02:26:25,927 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:26:25,993 - utils.logger - INFO - Language models initialized successfully.
+2025-03-28 02:26:26,046 - utils.logger - INFO - Start planner agent
+2025-03-28 02:26:26,046 - utils.logger - INFO - Created planner agent successfully
+2025-03-28 02:26:38,918 - utils.logger - INFO - Start replanner agent
+2025-03-28 02:26:38,919 - utils.logger - INFO - Created replanner agent successfully
