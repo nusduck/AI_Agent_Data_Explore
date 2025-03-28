@@ -2,20 +2,23 @@ from langgraph.types import Command
 from core.graph import workflow
 from core.state import GraphState
 from utils.data_loader import DataLoader
-
-
+import uuid
+number = uuid.uuid4()
+print(number)
 data_loader = DataLoader()
-df = data_loader.load_data("data/sample_data.csv")[0]
+df = data_loader.load_data("data/final_OECD_prices.csv")[0]
 
 state = GraphState(
-    target="Show me technical indicators for the stock market",
-    raw_data_path="data/sample_data.csv",
+    target="help me predict the price",
+    number=number,
+    raw_data_path="data/final_OECD_prices.csv",
     raw_data_description=data_loader.generate_data_description(df),
     raw_data_samples=data_loader.get_data_samples(df).to_dict(),
     # raw_data_info=data_loader.get_data_info(df),
     pending_human_input=False
 )
-thread_config = {"configurable": {"thread_id": "13"}}
+# generate thread_id randomly
+thread_config = {"configurable": {"thread_id": str(number)}}
 
 result = workflow().invoke(state, config=thread_config)
 print("-"*100)

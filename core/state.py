@@ -5,6 +5,7 @@ import operator
 class GraphState(TypedDict):
     """Represents the state of our graph."""
     target: str
+    number: str
     # raw data
     raw_data_path: str
     raw_data: Optional[Dict[str, Any]] = None
