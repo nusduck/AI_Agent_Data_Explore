@@ -629,7 +629,7 @@ if 'df' in st.session_state:
                 
                 # Add a refresh button
                 if st.button("Refresh Results"):
-                    st.experimental_rerun()
+                    st.rerun()
 else:
     # Welcome screen with instructions
     st.markdown("""

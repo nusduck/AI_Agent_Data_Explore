@@ -10,6 +10,8 @@ def execute_node(state: GraphState) -> GraphState:
     {data_path};
     Data description:
     {data_description}
+    Data Samples:
+    {data_samples}
     Your task:
     {task}
     Notice:
@@ -18,16 +20,20 @@ def execute_node(state: GraphState) -> GraphState:
     - Don't print module name, just use it directly
     - 注意日期格式，不要使用字符串
     - 使用plt.savefig()保存图像
-        keep path: outputs/{number}/visualization/
+        save path: outputs/{number}/visualization/
     - 不调用plt.show()
     - 相同类型的图画在同一个图里
     - 图片原则：
         风格类型：极简主义/科技感/复古/高对比度/深色模式
         核心参数：style.use(), set_palette(), rcParams, figsize, grid, despine
-        设计原则：信息优先（Data-Ink Ratio）、一致性、无障碍色觉设计
-    - Fianl output your analysis result in the markdown format in the end which should support by the data.
-        Keep path: outputs/{number}/analysis/
-    """.format(number=state["number"], data_path=state["raw_data_path"], data_description=state["raw_data_description"], task=state["analysis_plan"])
+        设计原则：信息优先（Data-Ink Ratio）、一致性、无障碍色觉设计，确保标题、标签、图例和注释清晰可读
+    - Fianl output your analysis result as the markdown format.
+        根据代码执行结果生成分析报告
+        使用数据一一对'Plan'进行说明
+        如有建模请对模型进行解释
+        使用英语
+        save path: outputs/{number}/analysis/
+    """.format(number=state["number"], data_path=state["raw_data_path"],data_samples = state["raw_data_samples"], data_description=state["raw_data_description"], task=state["analysis_plan"])
     messages = [{
         "role": "user",
         "content": prompt
