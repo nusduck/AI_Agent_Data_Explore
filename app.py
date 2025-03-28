@@ -12,10 +12,10 @@ state = GraphState(
     raw_data_path="data/sample_data.csv",
     raw_data_description=data_loader.generate_data_description(df),
     raw_data_samples=data_loader.get_data_samples(df).to_dict(),
-    raw_data_info=data_loader.get_data_info(df),
+    # raw_data_info=data_loader.get_data_info(df),
     pending_human_input=False
 )
-thread_config = {"configurable": {"thread_id": "11"}}
+thread_config = {"configurable": {"thread_id": "13"}}
 
 result = workflow().invoke(state, config=thread_config)
 print("-"*100)
@@ -23,5 +23,5 @@ print("Here is the plan:")
 print(result["analysis_plan"])
 print("-"*100)
 
-workflow().stream(Command(resume={"action": "edit","review":"please simplyfy the plan"}), config=thread_config, stream_mode=["values", "messages"])
+workflow().invoke(Command(resume={"action": "go","review":"please simplyfy the plan"}), config=thread_config)
 print(state)

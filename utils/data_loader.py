@@ -76,9 +76,9 @@ class DataLoader:
                 col: {
                     "min": df[col].min() if not pd.isna(df[col].min()) else None,
                     "max": df[col].max() if not pd.isna(df[col].max()) else None,
-                    "mean": df[col].mean() if not pd.isna(df[col].mean()) else None,
-                    "median": df[col].median() if not pd.isna(df[col].median()) else None,
-                    "std": df[col].std() if not pd.isna(df[col].std()) else None,
+                    "mean": df[col].mean().astype(float) if not pd.isna(df[col].mean()) else None,
+                    "median": df[col].median().astype(float) if not pd.isna(df[col].median()) else None,
+                    "std": df[col].std().astype(float) if not pd.isna(df[col].std()) else None,
                 }
                 for col in numeric_cols
             }
