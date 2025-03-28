@@ -9,7 +9,7 @@ class GraphState(TypedDict):
     raw_data_path: str
     raw_data: Optional[Dict[str, Any]] = None
     raw_data_description: Optional[str] = None
-    raw_data_info: Optional[Dict[str, Any]] = None
+    raw_data_info: Optional[Dict[str, str]] = None
     raw_data_samples: Optional[Dict[str, Any]] = None
     # analysis parameters
     analysis_params: Optional[dict] = None
@@ -19,7 +19,7 @@ class GraphState(TypedDict):
     validated_data_description: Optional[str] = None
     validated_data_info: Optional[Dict[str, Any]] = None
     # analysis plan
-    analysis_plan: Optional[List[str]] = None
+    analysis_plan: Optional[str] = None
     current_step: Optional[str] = None
     past_steps: Annotated[List[Tuple[str, str]], operator.add] = []  # List of (step, result) tuples
     step_index: Optional[int] = None

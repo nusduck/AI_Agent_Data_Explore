@@ -13,8 +13,8 @@ model_manager = LanguageModelManager()
 
 class AnalysisPlan(BaseModel):
     """Plan for data analysis and visualization"""
-    steps: List[str] = Field(
-        description="different steps to follow for data analysis and visualization, in sequential order"
+    steps: Optional[str] = Field(
+        description="The data visualization and analysis plan includes detailed steps across four modules: data processing, data description, data exploration, and data visualization."
     )
 
 def planner_agent(state: GraphState) -> Any:
