@@ -1,0 +1,15 @@
+=== T-Test Results for Continuous Variables (DEATH 0 vs. 1) ===
+age: t-statistic=-4.1862, p-value=0.0000
+creatinineP: t-statistic=-0.9012, p-value=0.3692
+creatinineS: t-statistic=-4.1526, p-value=0.0001
+ejection: t-statistic=4.5670, p-value=0.0000
+platelets: t-statistic=0.8448, p-value=0.3993
+sodium: t-statistic=3.1645, p-value=0.0019
+time: t-statistic=11.0062, p-value=0.0000
+
+=== Chi-Square Test Results for Binary Variables (vs. DEATH) ===
+anaemia: chi2=1.0422, p-value=0.3073, dof=1
+diabetes: chi2=0.0000, p-value=1.0000, dof=1
+bloodPressure: chi2=1.5435, p-value=0.2141, dof=1
+sex: chi2=0.0000, p-value=1.0000, dof=1
+smoking: chi2=0.0073, p-value=0.9318, dof=1

@@ -39,9 +39,24 @@ def execute_node(state: GraphState) -> GraphState:
         "content": prompt
     }]
     codeact = agent_coder(state)
-    result = codeact.invoke({"messages": messages})
-    # print(result["messages"][-1].content)
-    return {"analysis_summary": result["messages"][-1].content}
+    try:
+        # 调用agent并获取结果
+        result = codeact.invoke({"messages": messages})
+        
+        # 确保返回值是可序列化的，只提取所需信息
+        last_message_content = result["messages"][-1].content if result.get("messages") and len(result["messages"]) > 0 else ""
+        
+        # 返回一个简单的字典，确保可以序列化
+        return {"analysis_status": "completed"}
+    except Exception as e:
+        # 记录错误并返回可序列化的错误信息
+        import traceback
+        error_trace = traceback.format_exc()
+        print(f"Error in execute_node: {str(e)}\n{error_trace}")
+        return {"analysis_status": f"Error during analysis: {str(e)}", "error": str(e)}
+    # result = codeact.invoke({"messages": messages})
+    # # print(result["messages"][-1].content)
+    # return {"analysis_status": "completed"}
     # for typ, chunk in codeact.stream(
     #     {"messages": messages},
     #     stream_mode=["values", "messages"],

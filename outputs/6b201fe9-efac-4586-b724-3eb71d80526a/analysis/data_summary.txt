@@ -1,0 +1,41 @@
+=== Continuous Variables Summary ===
+             count           mean           std      min       25%       50%       75%       max
+age          299.0      60.833893     11.894809     40.0      51.0      60.0      70.0      95.0
+creatinineP  299.0     581.839465    970.287881     23.0     116.5     250.0     582.0    7861.0
+creatinineS  299.0       1.393880      1.034510      0.5       0.9       1.1       1.4       9.4
+ejection     299.0      38.083612     11.834841     14.0      30.0      38.0      45.0      80.0
+platelets    299.0  263358.029264  97804.236869  25100.0  212500.0  262000.0  303500.0  850000.0
+sodium       299.0     136.625418      4.412477    113.0     134.0     137.0     140.0     148.0
+time         299.0     130.260870     77.614208      4.0      73.0     115.0     203.0     285.0
+
+=== Binary Variables Frequency Count ===
+
+anaemia:
+anaemia
+0    170
+1    129
+
+diabetes:
+diabetes
+0    174
+1    125
+
+bloodPressure:
+bloodPressure
+0    194
+1    105
+
+sex:
+sex
+1    194
+0    105
+
+smoking:
+smoking
+0    203
+1     96
+
+DEATH:
+DEATH
+0    203
+1     96

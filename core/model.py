@@ -1,5 +1,8 @@
 from enum import Enum
 from typing import Dict, Optional
+from dotenv import load_dotenv
+import os
+load_dotenv()  
 
 from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -9,8 +12,9 @@ class ModelType(Enum):
     """Enum for different model types"""
     OPENAI_MINI = "gpt-4o-mini"
     OPENAI_O3 = "o3-mini-2025-01-31"
-    GOOGLE_FLASH = "gemini-2.0-flash-exp"
+    GOOGLE_FLASH = "gemini-2.0-flash"
     OPENAI_4O = "gpt-4o"
+    DEEPSEEK = "deepseek-ai/DeepSeek-V3-0324"
 
 class ModelConfig:
     """Configuration for different models"""
@@ -20,7 +24,8 @@ class ModelConfig:
             "provider": "openai"
         },
         ModelType.OPENAI_O3: {
-            "provider": "openai"
+            "provider": "openai",
+            "reasoning_effort": "high"
         },
         ModelType.GOOGLE_FLASH: {
             "temperature": 0,
@@ -29,6 +34,12 @@ class ModelConfig:
         ModelType.OPENAI_4O: {
             "temperature": 0.5,
             "provider": "openai"
+        },
+        ModelType.DEEPSEEK: {
+            "temperature": 0.6,
+            "provider": "openai",
+            "base_url": "https://llm.chutes.ai/v1",
+            "api_key": os.getenv("DEEPSEEK_API_KEY")
         }
     }
 
