@@ -45,6 +45,8 @@ class GraphState(TypedDict):
     visualization_paths: Optional[List[str]] = []  # Paths to saved visualization files
     # analysis metrics
     analysis_metrics: Optional[Dict[str, Any]] = {}  # Store analysis metrics and results
+    # evaluation results
+    evaluation_results: Optional[str] = None  # Store evaluation results
     # state management
     analysis_status: Optional[str] = "not_started"  # Track overall status (not_started, in_progress, human_review, completed, error)
     interruption_reason: Optional[str] = None  # Reason why process was paused for human input

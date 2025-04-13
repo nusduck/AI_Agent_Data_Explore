@@ -9,6 +9,7 @@ from node.human_plan_feedback import human_plan_feedback_node
 from node.plan_node import plan_node
 from node.replan_node import replan_node
 from node.execute_node import execute_node
+from node.evaluate_node import evaluate_node
 from core.state import GraphState
 
 conn = sqlite3.connect("checkpoints.sqlite", check_same_thread=False)   
@@ -26,6 +27,7 @@ def workflow() -> StateGraph:
     graph.add_node("human_plan_feedback", human_plan_feedback_node)
     graph.add_node("replan", replan_node)
     graph.add_node("execute", execute_node)
+    graph.add_node("evaluate", evaluate_node)
 
     graph.set_entry_point("plan")
     graph.add_edge(START, "plan")
@@ -36,6 +38,7 @@ def workflow() -> StateGraph:
     #     replan_executor_condition
     # )
     graph.add_edge("replan", "execute")
-    graph.add_edge("execute", END)
+    graph.add_edge("execute", "evaluate")
+    graph.add_edge("evaluate", END)
     return graph.compile(checkpointer=memory)
 

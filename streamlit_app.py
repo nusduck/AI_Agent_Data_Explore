@@ -337,9 +337,9 @@ if 'active_tab' not in st.session_state:
 # Main content area with tabs
 if 'df' in st.session_state:
     # Create tabs for better organization
-    tabs = ["📊 Data Exploration", "🔍 Analysis", "📈 Results"]
+    tabs = ["📊 Data Exploration", "🔍 Analysis", "📈 Results", "🧪 Evaluation"]
     active_tab = st.session_state.get('active_tab', 0)
-    tab1, tab2, tab3 = st.tabs(tabs)
+    tab1, tab2, tab3, tab4 = st.tabs(tabs)
     
     with tab1:
         # Data information tab
@@ -525,10 +525,11 @@ if 'df' in st.session_state:
                 try:
                     with st.spinner("🧠 Processing your feedback..."):
                         # Resume workflow with user feedback, passing both action and review
-                        workflow().invoke(
+                        final_result = workflow().invoke(
                             Command(resume={"action": st.session_state.feedback_action, "review": st.session_state.user_feedback}), 
                             config=st.session_state.thread_config
                         )
+                        st.session_state.evaluation_results = final_result.get("evaluation_results", "No evaluation results available.")
                         st.success("Analysis complete! View your results now.")
                         
                         # Add a button to jump to results
@@ -630,6 +631,29 @@ if 'df' in st.session_state:
                 # Add a refresh button
                 if st.button("Refresh Results"):
                     st.rerun()
+    
+    # Add a new tab for evaluation results
+    with tab4:
+        st.header("Evaluation Results")
+        
+        if 'evaluation_results' in st.session_state:
+            st.markdown("""
+            <div class="markdown-text-container">
+                <p>Below are the evaluation results of the analysis.</p>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            # Display evaluation results in markdown format
+            evaluation_results = st.session_state.evaluation_results
+            st.markdown(evaluation_results)
+        else:
+            st.info("Evaluation results will appear here after the analysis is complete.")
+            st.markdown("""
+            <div class="markdown-text-container">
+                <p>The evaluation provides metrics and insights about the quality and reliability of the analysis.</p>
+                <p>Run a complete analysis to see the evaluation results.</p>
+            </div>
+            """, unsafe_allow_html=True)
 else:
     # Welcome screen with instructions
     st.markdown("""
@@ -644,4 +668,4 @@ else:
             </div>
         </div>
     </div>
-    """, unsafe_allow_html=True) 
+    """, unsafe_allow_html=True)
