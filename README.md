@@ -12,6 +12,7 @@ This Streamlit application provides a user-friendly interface for the data analy
 6. **Evaluation**: Assess the quality and relevance of analysis results
 
 ## UI Flow
+![UI Flow](UI%20Flow.png)
 
 ## Agents Graph
 
