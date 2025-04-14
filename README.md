@@ -25,12 +25,16 @@ This Streamlit application provides a user-friendly interface for the data analy
    pip install -r requirements.txt
    ```
 
-2. Run the Streamlit app:
+2. API Environment
+echo "OPENAI_API_KEY=your_api_key_here" > .env
+```
+
+3. Run the Streamlit app:
    ```bash
    streamlit run streamlit_app.py
    ```
 
-3. The app will open in your browser at `http://localhost:8501`
+4. The app will open in your browser at `http://localhost:8501`
 
 ## Workflow
 
