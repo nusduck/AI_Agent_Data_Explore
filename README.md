@@ -26,8 +26,9 @@ This Streamlit application provides a user-friendly interface for the data analy
    ```
 
 2. API Environment
-echo "OPENAI_API_KEY=your_api_key_here" > .env
-```
+   ```bash
+   echo "OPENAI_API_KEY=your_api_key_here" > .en
+   ```
 
 3. Run the Streamlit app:
    ```bash
