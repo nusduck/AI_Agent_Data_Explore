@@ -11,6 +11,8 @@ This Streamlit application provides a user-friendly interface for the data analy
 5. **Results Viewer**: Browse analysis reports and visualizations from previous runs
 6. **Evaluation**: Assess the quality and relevance of analysis results
 
+## UI Flow
+
 ## Agents Graph
 
 ![image-20250413221203748](http://hexo.kygoho.win/upload/uploads/623a4c71-f49d-41a7-894f-cf65a300c818.png)
