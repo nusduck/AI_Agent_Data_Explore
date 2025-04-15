@@ -10,7 +10,7 @@ from utils.file_operate_e2b import upload_file_to_sandbox
 
 logger = setup_logger("agent_coder.log")
 model_manager = LanguageModelManager()
-llm = model_manager.get_model(ModelType.OPENAI_O3)
+llm = model_manager.get_model(ModelType.OPENAI_4_1)
 
 
 
