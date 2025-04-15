@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  ai_agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ai_agent:latest
+    container_name: ai_agent
+    ports:
+      - "8501:8501"  # 映射Streamlit默认端口
+    volumes:
+      - ./.env:/app/.env  # 映射.env文件
+      - ./data:/app/data  # 映射data目录
+      - ./outputs:/app/outputs  # 映射outputs目录
+    restart: unless-stopped
+    # 设置环境变量（可选，如果需要覆盖.env中的某些变量）
+    environment:
+      - PYTHONUNBUFFERED=1  # 确保Python输出不被缓存，便于查看日志
