@@ -15,6 +15,7 @@ class ModelType(Enum):
     GOOGLE_FLASH = "gemini-2.0-flash"
     OPENAI_4O = "gpt-4o"
     DEEPSEEK = "deepseek-ai/DeepSeek-V3-0324"
+    OPENAI_4_1 = "gpt-4.1-2025-04-14"
 
 class ModelConfig:
     """Configuration for different models"""
@@ -35,8 +36,12 @@ class ModelConfig:
             "temperature": 0.5,
             "provider": "openai"
         },
+        ModelType.OPENAI_4_1: {
+            "temperature": 0.1,
+            "provider": "openai"
+        },
         ModelType.DEEPSEEK: {
-            "temperature": 0.6,
+            "temperature": 0.2,
             "provider": "openai",
             "base_url": "https://llm.chutes.ai/v1",
             "api_key": os.getenv("DEEPSEEK_API_KEY")
