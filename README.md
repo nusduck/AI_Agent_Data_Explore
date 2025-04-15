@@ -1,4 +1,4 @@
-# Data Analysis Assistant
+# AI Agent Data Explore
 
 This Streamlit application provides a user-friendly interface for the data analysis workflow.
 
@@ -12,7 +12,7 @@ This Streamlit application provides a user-friendly interface for the data analy
 6. **Evaluation**: Assess the quality and relevance of analysis results
 
 ## UI Flow
-![UI Flow](UI%20Flow.png)
+![UI Flow](http://hexo.kygoho.win/upload/uploads/4fae295c-4e11-4603-918d-cc8ae028f8ac.png)
 
 ## Agents Graph
 
