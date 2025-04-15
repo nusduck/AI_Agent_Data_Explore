@@ -576,7 +576,7 @@ if 'df' in st.session_state:
                     # Display all found markdown files with clear headings
                     for md_file in md_files:
                         report_name = os.path.basename(md_file).replace('.md', '').replace('_', ' ').title()
-                        st.markdown(f"#### {report_name}")
+                        # st.markdown(f"#### {report_name}")
                         
                         # Read and display the markdown content
                         try:
