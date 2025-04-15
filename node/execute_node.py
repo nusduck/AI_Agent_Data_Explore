@@ -27,7 +27,7 @@ def execute_node(state: GraphState) -> GraphState:
         风格类型：极简主义/科技感/复古/高对比度/深色模式
         核心参数：style.use(), set_palette(), rcParams, figsize, grid, despine
         设计原则：信息优先（Data-Ink Ratio）、一致性、无障碍色觉设计，确保标题、标签、图例和注释清晰可读
-    - Fianl output your analysis result as the markdown format.
+    - Fianl output your analysis result as the markdown format and save it.
         根据代码执行结果生成分析报告
         使用数据一一对'Plan'进行说明
         如有建模请对模型进行解释
