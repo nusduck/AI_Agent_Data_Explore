@@ -33,6 +33,7 @@ class GraphState(TypedDict):
     analysis_summary: Optional[str] = None
     report_content: Optional[str] = None
     error_message: Optional[str] = None
+    final_report: Optional[str] = None
     # user feedback
     user_feedback: Optional[str] = None  # Store user input from HITL
     agent_outcome: Optional[str] = None  # Latest agent execution result for routing decisions
