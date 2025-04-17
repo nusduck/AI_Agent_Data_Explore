@@ -30,6 +30,7 @@ def execute_node(state: GraphState) -> GraphState:
     - Fianl output your analysis result report as the markdown format and save it.
         根据代码执行结果生成分析报告
         使用数据一一对'Plan'进行说明,并将数据以csv，txt格式保存
+        do not save the cleaned data!
         如有建模请对模型进行解释
         使用英语
         save path: outputs/{number}/analysis/
