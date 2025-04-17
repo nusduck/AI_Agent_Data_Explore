@@ -12,7 +12,7 @@ A powerful, user-friendly **Streamlit** application for end-to-end data analysis
 ## 💡 UI Flow
 ![UI Flow](http://hexo.kygoho.win/upload/uploads/4fae295c-4e11-4603-918d-cc8ae028f8ac.png)
 ## 🕸️ Agents Graph
-![image-20250413221203748](http://hexo.kygoho.win/upload/uploads/623a4c71-f49d-41a7-894f-cf65a300c818.png)
+![image-20250417201155362](http://hexo.kygoho.win/upload/uploads/1a85a006-a525-4093-a344-4779e8a6159e.png)
 ---
 ## 🚀 Quick Start
 ### 📦 Local Installation
@@ -41,26 +41,25 @@ A powerful, user-friendly **Streamlit** application for end-to-end data analysis
    mkdir -p data outputs
    ```
 3. **Use the docker-compose.yml below:**
-   <details>
-   <summary> Docker <img src="https://img.icons8.com/color/24/000000/docker.png" width="18"/></summary>
-   </details>
-   ```
+
+   ```yaml
    version: '3.8'
    services:
-     ai_agent:
-       image: iamaduck/ai_agent:latest
-       container_name: ai_agent
-       ports:
-         - "8501:8501"   # Streamlit UI
-       volumes:
-         - ./.env:/app/.env
-         - ./data:/app/data
-         - ./outputs:/app/outputs
-       restart: unless-stopped
-       environment:
-         - PYTHONUNBUFFERED=1
+    ai_agent:
+      image: iamaduck/ai_agent:latest
+      container_name: ai_agent
+      ports:
+        - "8501:8501"   # Streamlit UI
+      volumes:
+        - ./.env:/app/.env
+        - ./data:/app/data
+        - ./outputs:/app/outputs
+      restart: unless-stopped
+      environment:
+        - PYTHONUNBUFFERED=1
    ```
 4. **Start the application:**
+   
    ```bash
    docker-compose up -d
    ```
@@ -73,7 +72,7 @@ A powerful, user-friendly **Streamlit** application for end-to-end data analysis
 4. Click **Start Analysis**
 5. Inspect the proposed analysis plan and refine as needed
 6. View reports & visualizations in the “Analysis Results” panel
-7. Evaluate report quality to improve future outputs
+7. View the report quality in Evaluation panel
 ---
 ## 📑 Notes & Tips
 - All reports are stored in `outputs/{uuid}/`
