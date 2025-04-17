@@ -3,6 +3,7 @@ A powerful, user-friendly **Streamlit** application for end-to-end data analysis
 
 ## ✨ Features
 - **📂 Data Upload:** Easily upload CSV, Excel, or JSON files
+- 😈 **Model Setting:** Easily choose the right model
 - **🔍 Data Overview:** Instantly view data statistics, samples, and descriptive info
 - **⚙️ Analysis Target:** Define your analysis goals (*default:* “help me explore the data, show the insights”)
 - **🗺️ Analysis Plan:** Review the generated plan and give your feedback
@@ -67,12 +68,13 @@ A powerful, user-friendly **Streamlit** application for end-to-end data analysis
 ---
 ## 🔁 Full Workflow
 1. Upload your data file via the sidebar
-2. Review the automatically generated data summary
-3. Optionally, adjust the analysis target
-4. Click **Start Analysis**
-5. Inspect the proposed analysis plan and refine as needed
-6. View reports & visualizations in the “Analysis Results” panel
-7. View the report quality in Evaluation panel
+2. Choose the model you want
+3. Review the automatically generated data summary
+4. Optionally, adjust the analysis target
+5. Click **Start Analysis**
+6. Inspect the proposed analysis plan and refine as needed
+7. View reports & visualizations in the “Analysis Results” panel
+8. View the report quality in Evaluation panel
 ---
 ## 📑 Notes & Tips
 - All reports are stored in `outputs/{uuid}/`
