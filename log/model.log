@@ -849,3 +849,151 @@
 2025-04-17 19:54:48,454 - utils.logger - INFO - Start planner agent
 2025-04-17 19:54:48,456 - utils.logger - INFO - Created planner agent successfully
 2025-04-17 19:56:38,294 - utils.logger - INFO - Start agent coder
+2025-04-17 21:07:54,321 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:07:54,401 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:07:54,546 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:07:54,622 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:07:54,694 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:08:04,536 - utils.logger - INFO - Start planner agent
+2025-04-17 21:08:04,538 - utils.logger - INFO - Created planner agent successfully
+2025-04-17 21:08:54,527 - utils.logger - INFO - Start agent coder
+2025-04-17 21:19:58,811 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:19:58,901 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:19:58,983 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:19:59,061 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:19:59,136 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:30:35,424 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:30:35,511 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:30:35,591 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:30:35,944 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:30:36,022 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:30:48,749 - utils.logger - INFO - Start planner agent
+2025-04-17 21:30:48,752 - utils.logger - INFO - Created planner agent successfully
+2025-04-17 21:32:16,276 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:32:16,432 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:32:16,524 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:32:16,616 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:32:16,699 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:32:18,619 - utils.logger - INFO - Start agent coder
+2025-04-17 21:46:49,932 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:46:50,029 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:46:50,106 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:46:50,188 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:46:50,264 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:47:16,074 - utils.logger - INFO - Start planner agent
+2025-04-17 21:47:16,079 - utils.logger - INFO - Created planner agent successfully
+2025-04-17 21:49:48,390 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:49:48,487 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:49:48,624 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:49:48,792 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:49:48,891 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:49:50,454 - utils.logger - INFO - Start agent coder
+2025-04-17 21:55:22,511 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:55:22,609 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:55:22,685 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:55:22,765 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:55:22,845 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 21:55:33,298 - utils.logger - INFO - Start planner agent
+2025-04-17 21:55:33,300 - utils.logger - INFO - Created planner agent successfully
+2025-04-17 21:56:49,950 - utils.logger - INFO - Start agent coder
+2025-04-17 22:39:22,352 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 22:39:22,457 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 22:39:22,539 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 22:39:22,627 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 22:39:22,703 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 22:39:32,790 - utils.logger - INFO - Start planner agent
+2025-04-17 22:39:32,793 - utils.logger - INFO - Created planner agent successfully
+2025-04-17 22:41:26,776 - utils.logger - INFO - Start agent coder
+2025-04-17 22:54:41,019 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 22:54:41,205 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 22:54:41,314 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 22:54:41,434 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 22:54:41,518 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 22:54:54,576 - utils.logger - INFO - Start planner agent
+2025-04-17 22:54:54,577 - utils.logger - INFO - Created planner agent successfully
+2025-04-17 22:56:23,860 - utils.logger - INFO - Start agent coder
+2025-04-17 23:06:02,715 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:06:02,809 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:06:02,901 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:06:02,981 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:06:03,062 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:06:13,381 - utils.logger - INFO - Start planner agent
+2025-04-17 23:06:13,384 - utils.logger - INFO - Created planner agent successfully
+2025-04-17 23:08:17,453 - utils.logger - INFO - Start agent coder
+2025-04-17 23:17:29,214 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:17:29,295 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:17:29,456 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:17:29,530 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:17:29,603 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:17:39,237 - utils.logger - INFO - Start planner agent
+2025-04-17 23:17:39,238 - utils.logger - INFO - Created planner agent successfully
+2025-04-17 23:19:04,027 - utils.logger - INFO - Start agent coder
+2025-04-17 23:44:24,226 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:44:24,306 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:44:24,447 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:44:24,519 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:44:24,590 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:44:34,968 - utils.logger - INFO - Start planner agent
+2025-04-17 23:44:34,969 - utils.logger - INFO - Created planner agent successfully
+2025-04-17 23:45:26,354 - utils.logger - INFO - Start agent coder
+2025-04-17 23:53:23,384 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:53:23,476 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:53:24,437 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:53:24,511 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:53:24,582 - utils.logger - INFO - Language models initialized successfully.
+2025-04-17 23:53:34,092 - utils.logger - INFO - Start planner agent
+2025-04-17 23:53:34,094 - utils.logger - INFO - Created planner agent successfully
+2025-04-17 23:54:49,742 - utils.logger - INFO - Start agent coder
+2025-04-18 00:30:48,734 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:30:48,840 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:30:48,991 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:30:49,068 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:30:49,143 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:30:49,222 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:31:11,524 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:31:15,201 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:31:21,506 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:31:32,615 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:31:35,697 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:31:35,911 - utils.logger - INFO - Start planner agent with model: GOOGLE_FLASH
+2025-04-18 00:31:35,913 - utils.logger - INFO - Created planner agent successfully
+2025-04-18 00:31:46,589 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:31:51,052 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:31:53,305 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:32:00,269 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:32:02,961 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:32:03,039 - utils.logger - INFO - Start planner agent with model: OPENAI_MINI
+2025-04-18 00:32:03,040 - utils.logger - INFO - Created planner agent successfully
+2025-04-18 00:32:37,734 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:32:39,386 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:32:39,433 - utils.logger - INFO - Start agent coder with model: OPENAI_MINI
+2025-04-18 00:37:44,911 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:40:21,240 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:40:21,321 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:40:21,468 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:40:21,540 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:40:21,610 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:40:21,684 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:41:04,924 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:41:05,001 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:41:05,135 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:41:05,205 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:41:05,277 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:41:05,431 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:42:10,771 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:42:10,859 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:42:10,997 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:42:11,067 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:42:11,137 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:42:11,211 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:42:25,213 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:42:28,655 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:42:28,810 - utils.logger - INFO - Start planner agent with model: OPENAI_O4
+2025-04-18 00:42:28,810 - utils.logger - INFO - Created planner agent successfully
+2025-04-18 00:43:10,114 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:43:24,427 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:43:24,502 - utils.logger - INFO - Start agent coder with model: OPENAI_O4
+2025-04-18 00:55:28,491 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:55:36,583 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:55:38,110 - utils.logger - INFO - Language models initialized successfully.
+2025-04-18 00:55:46,119 - utils.logger - INFO - Language models initialized successfully.

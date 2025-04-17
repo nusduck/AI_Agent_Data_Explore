@@ -1,7 +1,7 @@
-
+import streamlit as st
 from core.state import GraphState
 from agents.agent_coder import agent_coder
-
+from core.model import LanguageModelManager, ModelType
 
 def execute_node(state: GraphState) -> GraphState:
     prompt = """
@@ -17,7 +17,6 @@ def execute_node(state: GraphState) -> GraphState:
     Notice:
     - 设置后端为Agg（非交互式）
     - Don't use jupyter notebook, just use python
-    - Don't print module name, just use it directly
     - 注意日期格式，不要使用字符串
     - 使用plt.savefig()保存图像
         save path: outputs/{number}/visualization/
@@ -27,9 +26,8 @@ def execute_node(state: GraphState) -> GraphState:
         风格类型：极简主义/科技感/复古/高对比度/深色模式
         核心参数：style.use(), set_palette(), rcParams, figsize, grid, despine
         设计原则：信息优先（Data-Ink Ratio）、一致性、无障碍色觉设计，确保标题、标签、图例和注释清晰可读
-    - Fianl output your analysis result report as the markdown format and save it.
-        根据代码执行结果生成分析报告
-        使用数据一一对'Plan'进行说明,并将数据以csv，txt格式保存
+    - save your analysis results.
+        将处理过程中的数据结果保存为csv，txt格式
         do not save the cleaned data!
         如有建模请对模型进行解释
         使用英语
@@ -39,10 +37,15 @@ def execute_node(state: GraphState) -> GraphState:
         "role": "user",
         "content": prompt
     }]
-    codeact = agent_coder(state)
+    if 'st' in globals() and hasattr(st, 'session_state') and 'model_selections' in st.session_state:
+        model_type = st.session_state.model_selections.get('execute', 'OPENAI_O4')
+        model_type = getattr(ModelType, model_type)
+    else:
+        model_type = ModelType.OPENAI_O4
+    codeact = agent_coder(state, model_type)
     try:
         # 调用agent并获取结果
-        result = codeact.invoke({"messages": messages})
+        result = codeact.invoke({"messages": messages},config={"recursion_limit":50})
         
         # 确保返回值是可序列化的，只提取所需信息
         last_message_content = result["messages"][-1].content if result.get("messages") and len(result["messages"]) > 0 else ""

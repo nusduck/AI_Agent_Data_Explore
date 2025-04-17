@@ -8,6 +8,10 @@ from langgraph.types import Command
 from core.graph import workflow
 from core.state import GraphState
 from utils.data_loader import DataLoader
+from core.model import ModelType, LanguageModelManager  # 添加模型相关的导入
+
+# 初始化模型管理器
+model_manager = LanguageModelManager()
 
 # Set page config and apply custom CSS for a futuristic look
 st.set_page_config(page_title="Data Analysis Assistant", layout="wide")
@@ -320,7 +324,67 @@ with st.sidebar:
             st.success(f"✅ {uploaded_file.name} loaded successfully")
             st.session_state.df = df
             st.session_state.data_path = temp_file_path
-    # Add GitHub link
+    
+    # 添加模型选择部分
+    st.header("Model Setting")
+    
+    # 为不同节点准备模型类型选项
+    model_options = {name: model.value for name, model in ModelType.__members__.items()}
+    
+    # 初始化 session_state 中的模型选择
+    if 'model_selections' not in st.session_state:
+        st.session_state.model_selections = {
+            'plan': 'OPENAI_O4',
+            'replan': 'OPENAI_O4',
+            'execute': 'OPENAI_O4',
+            'report': 'GOOGLE_FLASH',
+            'evaluate': 'GOOGLE_FLASH'
+        }
+    
+    # 在侧边栏中添加模型选择下拉菜单
+    st.subheader("Model Option")
+    
+    # 计划节点模型选择
+    st.session_state.model_selections['plan'] = st.selectbox(
+        "Plan Node", 
+        options=list(ModelType.__members__.keys()),
+        index=list(ModelType.__members__.keys()).index(st.session_state.model_selections['plan']),
+        key="plan_model"
+    )
+    
+    # 重新计划节点模型选择
+    st.session_state.model_selections['replan'] = st.selectbox(
+        "Replan Node", 
+        options=list(ModelType.__members__.keys()),
+        index=list(ModelType.__members__.keys()).index(st.session_state.model_selections['replan']),
+        key="replan_model"
+    )
+    
+    # 执行节点模型选择
+    st.session_state.model_selections['execute'] = st.selectbox(
+        "Execution Node", 
+        options=list(ModelType.__members__.keys()),
+        index=list(ModelType.__members__.keys()).index(st.session_state.model_selections['execute']),
+        key="execute_model"
+    )
+    
+    # 报告节点模型选择
+    st.session_state.model_selections['report'] = st.selectbox(
+        "Report Node", 
+        options=list(ModelType.__members__.keys()),
+        index=list(ModelType.__members__.keys()).index(st.session_state.model_selections['report']),
+        key="report_model"
+    )
+    
+    # 评估节点模型选择
+    st.session_state.model_selections['evaluate'] = st.selectbox(
+        "Evaluation Node", 
+        options=list(ModelType.__members__.keys()),
+        index=list(ModelType.__members__.keys()).index(st.session_state.model_selections['evaluate']),
+        key="evaluate_model"
+    )
+    
+    # 添加GitHub链接
     st.markdown("""
     <div style="text-align: center; margin-bottom: 20px;">
         <a href="https://github.com/nusduck/AI_Agent_Data_Explore" target="_blank" style="text-decoration: none;">

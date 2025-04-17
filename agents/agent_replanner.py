@@ -1,4 +1,3 @@
-
 from typing import Any
 from langgraph.prebuilt import create_react_agent
 
@@ -10,10 +9,10 @@ logger = setup_logger("agent_replanner.log")
 model_manager = LanguageModelManager()
 
 
-def replanner_agent(state: GraphState) -> Any:
-    logger.info(f"Start replanner agent")
+def replanner_agent(state: GraphState, model_type: ModelType = ModelType.OPENAI_O4) -> Any:
+    logger.info(f"Start replanner agent with model: {model_type.name}")
     # model manager
-    llm = model_manager.get_model(ModelType.OPENAI_O3)
+    llm = model_manager.get_model(model_type)
 
     prompt = """
     For the given data analysis objective, update your plan based on what has been done so far.

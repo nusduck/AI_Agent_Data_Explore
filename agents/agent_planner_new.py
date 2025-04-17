@@ -17,15 +17,16 @@ class AnalysisPlan(BaseModel):
         description="The data visualization and analysis plan includes detailed steps across four modules: data processing, data description, data exploration, and data visualization."
     )
 
-def planner_agent(state: GraphState) -> Any:
-    logger.info(f"Start planner agent")
+def planner_agent(state: GraphState, model_type: ModelType = ModelType.OPENAI_O4) -> Any:
+    logger.info(f"Start planner agent with model: {model_type.name}")
     # model manager
-    llm = model_manager.get_model(ModelType.OPENAI_O4)
+    llm = model_manager.get_model(model_type)
     # Define data analysis tools
     tools = [create_web_search_tool()]
     # Create planning prompts
-    prompt = """For the given objective, develop a detailed step-by-step plan for data analysis and visualization.
-    first, here is some information about the data:
+    prompt = """
+    For the given objective, develop a detailed step-by-step plan for data analysis and visualization.
+    First, here is some information about the data:
         - the objective is:
         {objective}
         - the data description is:
@@ -36,8 +37,8 @@ def planner_agent(state: GraphState) -> Any:
         {data_path}
         - the data information is:
         {data_info}
-    second, use the web search tool to find some analysis ideas and add them to the plan.
-    third, create a plan for the analysis.
+    Second, use the web search tool to find some analysis ideas or some information about the dataset and add them to the plan.
+    Third, create a plan for the analysis.
         This plan should include specific tasks such as:
         1. data cleaning and preprocessing
         2. exploratory data analysis
@@ -47,6 +48,8 @@ def planner_agent(state: GraphState) -> Any:
     Make sure each step is clear, specific, and provides all information needed for execution.
     The final step should produce the desired analysis outcome or visualization.
     Do not add unnecessary steps and focus on the specific analysis goals.
+    Do not include any code in the plan.
+    Do not include delivery instructions in the plan.
     """
     
     # Safely extract values from state with defaults to prevent KeyError

@@ -10,13 +10,10 @@ from utils.file_operate_e2b import upload_file_to_sandbox
 
 logger = setup_logger("agent_coder.log")
 model_manager = LanguageModelManager()
-llm = model_manager.get_model(ModelType.OPENAI_4_1)
 
-
-
-def agent_coder(state: GraphState):
-    logger.info("Start agent coder")
-
+def agent_coder(state: GraphState, model_type: ModelType = ModelType.OPENAI_O4):
+    logger.info(f"Start agent coder with model: {model_type.name}")
     
+    llm = model_manager.get_model(model_type)
     codeact = create_codeact(model=llm,tools=[],eval_fn=eval)
     return codeact.compile()
