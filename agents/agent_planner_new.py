@@ -20,7 +20,7 @@ class AnalysisPlan(BaseModel):
 def planner_agent(state: GraphState) -> Any:
     logger.info(f"Start planner agent")
     # model manager
-    llm = model_manager.get_model(ModelType.OPENAI_O3)
+    llm = model_manager.get_model(ModelType.OPENAI_O4)
     # Define data analysis tools
     tools = [create_web_search_tool()]
     # Create planning prompts

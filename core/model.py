@@ -12,6 +12,7 @@ class ModelType(Enum):
     """Enum for different model types"""
     OPENAI_MINI = "gpt-4o-mini"
     OPENAI_O3 = "o3-mini-2025-01-31"
+    OPENAI_O4 = "o4-mini"
     GOOGLE_FLASH = "gemini-2.0-flash"
     OPENAI_4O = "gpt-4o"
     DEEPSEEK = "deepseek-ai/DeepSeek-V3-0324"
@@ -25,6 +26,10 @@ class ModelConfig:
             "provider": "openai"
         },
         ModelType.OPENAI_O3: {
+            "provider": "openai",
+            "reasoning_effort": "high"
+        },
+        ModelType.OPENAI_O4: {
             "provider": "openai",
             "reasoning_effort": "high"
         },
