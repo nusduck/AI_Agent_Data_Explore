@@ -17,7 +17,15 @@ A powerful, user-friendly **Streamlit** application for end-to-end data analysis
 ---
 ## 🚀 Quick Start
 ### 📦 Local Installation
+
+1. **Clone the Repo:**
+
+	```bash
+	git clone https://github.com/nusduck/AI_Agent_Data_Explore.git
+	```
+
 1. **Install dependencies:**
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -39,6 +47,7 @@ A powerful, user-friendly **Streamlit** application for end-to-end data analysis
    streamlit run streamlit_app.py
    ```
 4. Visit [http://localhost:8501](http://localhost:8501) in your browser.
+
 ---
 ### 🐳 Deploy with Docker Compose
 > **Recommended for easy deployment and isolation**
