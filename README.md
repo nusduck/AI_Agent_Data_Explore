@@ -22,9 +22,18 @@ A powerful, user-friendly **Streamlit** application for end-to-end data analysis
    pip install -r requirements.txt
    ```
 2. **Set up API key:**
-   ```bash
-   echo "OPENAI_API_KEY=your_api_key_here" > .env
+   edit `.env` file
    ```
+   OPENAI_API_KEY=Your_API_KEY
+   LANGSMITH_API_KEY=Your_API_KEY
+   LANGSMITH_TRACING=true
+   LANGSMITH_ENDPOINT="https://api.smith.langchain.com"
+   LANGSMITH_PROJECT=Your_LangSmith_project
+   TAVILY_API_KEY=Your_API_KEY
+   DEEPSEEK_API_KEY=Your_API_KEY
+   GOOGLE_API_KEY=Your_API_KEY
+   ```
+
 3. **Run Streamlit app:**
    ```bash
    streamlit run streamlit_app.py
@@ -35,7 +44,14 @@ A powerful, user-friendly **Streamlit** application for end-to-end data analysis
 > **Recommended for easy deployment and isolation**
 1. **Create a `.env` file in the project root:**
    ```
-   OPENAI_API_KEY=your_api_key_here
+   OPENAI_API_KEY=Your_API_KEY
+   LANGSMITH_API_KEY=Your_API_KEY
+   LANGSMITH_TRACING=true
+   LANGSMITH_ENDPOINT="https://api.smith.langchain.com"
+   LANGSMITH_PROJECT=Your_LangSmith_project
+   TAVILY_API_KEY=Your_API_KEY
+   DEEPSEEK_API_KEY=Your_API_KEY
+   GOOGLE_API_KEY=Your_API_KEY
    ```
 2. **Prepare local directories:**
    ```
