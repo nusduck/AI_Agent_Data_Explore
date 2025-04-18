@@ -16,6 +16,7 @@ def execute_node(state: GraphState) -> GraphState:
     {task}
     Notice:
     - generate the whole code at once
+    - each time return a complete code
     - 设置后端为Agg（非交互式）
     - Don't use jupyter notebook, just use python
     - 注意日期格式，不要使用字符串
