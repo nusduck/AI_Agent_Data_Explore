@@ -138,29 +138,22 @@ A powerful, user-friendly **Streamlit** application for end-to-end data analysis
 
  1. **Code Review in Evaluation Phase**
 - **Current:** Analysis quality is evaluated only via LLM.
-- **Improvement:** Integrate code review during the evaluation stage to assess:
-  - Readability  
-  - Robustness  
-  - Efficiency  
-  - Explainability  
-- **Benefit:** Improves code quality and provides educational feedback to non-technical users.
+- **Improvement:** Integrate code review during the evaluation stage to make comprehensively assess
+- **Benefit:**  Reproduce using code
 
  2. **From Static to Interactive Visualizations**
-- **Current:** Visuals are static (matplotlib).
+- **Current:** Visuals are static (matplotlib, seaborn).
 - **Improvement:** Adopt interactive libraries such as **Plotly** or **Altair** with zoom, hover, filtering, etc.
 - **Benefit:** Boosts user experience and supports deeper insight exploration.
 
  3. **Architecture Shift: Plan-Execute ➜ Supervisor-Team Collaboration**
-- **Current:** Linear `Plan ➝ Execute ➝ Report` structure.
+- **Current:**  `Plan(Replan) ➝ Execute ➝ Report` structure.
 - **Improvement:** Adopt a **Supervisor + Specialized Agent Team** structure:
   - **Supervisor:** Understands user intent, allocates sub-tasks.
-  - **Team Members:** EDA agent, modeling agent, visualization agent, reporting agent, etc.
+  - **Team Members:** EDA agent, modeling agent, visualization agent, reporting agent, evaluating agent etc.
 - **Benefit:** Supports parallelism, dynamic re-planning, multi-agent cooperation.
 
  4. **User Memory Integration**
-- **Current:** No session memory—preferences not retained.
-- **Improvement:** Add memory modules (e.g., `ConversationBufferMemory`) to:
-  - Remember user goals
-  - Track preferred models
-  - Store previously analyzed datasets
+- **Current:** No permenent memory—preferences.
+- **Improvement:** Add permenent memory modules.
 - **Benefit:** Enables **personalized** and **continually evolving** AI analysis experience.
